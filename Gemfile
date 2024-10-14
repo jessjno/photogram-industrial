@@ -1,6 +1,7 @@
 source "https://rubygems.org"
 git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 
+gem "devise"
 ruby "3.2.1"
 
 # Bundle edge Rails instead: gem "rails", github: "rails/rails", branch: "main"
@@ -76,7 +77,6 @@ end
 gem "active_link_to"
 gem "appdev_support"
 gem "awesome_print"
-gem "devise"
 gem "dotenv-rails"
 gem "faker"
 gem "htmlbeautifier"
