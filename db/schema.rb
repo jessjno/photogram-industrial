@@ -11,7 +11,6 @@
 # It's strongly recommended that you check this file into your version control system.
 
 ActiveRecord::Schema[7.1].define(version: 2024_10_14_192928) do
-ActiveRecord::Schema[7.1].define(version: 2024_10_14_144643) do
   # These are extensions that must be enabled in order to support this database
   enable_extension "citext"
   enable_extension "plpgsql"
@@ -44,7 +43,6 @@ ActiveRecord::Schema[7.1].define(version: 2024_10_14_144643) do
     t.index ["photo_id"], name: "index_likes_on_photo_id"
   end
 
-
   create_table "photos", force: :cascade do |t|
     t.string "image"
     t.integer "comments_count", default: 0
@@ -64,7 +62,6 @@ ActiveRecord::Schema[7.1].define(version: 2024_10_14_144643) do
     t.datetime "remember_created_at"
     t.string "username"
     t.boolean "private", default: true
-    t.boolean "private"
     t.integer "likes_count", default: 0
     t.integer "comments_count", default: 0
     t.datetime "created_at", null: false
