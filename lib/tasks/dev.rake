@@ -58,7 +58,7 @@ end
     rand(15).times do
       photo = user.own_photos.create(
         caption: Faker::Quote.jack_handey,
-        image: "https://robohash.ord/#{rand(9999)}"
+        image: "https://robohash.org/#{rand(9999)}"
       )
             
       user.followers.each do |follower|
