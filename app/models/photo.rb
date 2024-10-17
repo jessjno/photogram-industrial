@@ -31,6 +31,4 @@ class Photo < ApplicationRecord
   scope :past_week, -> { where(created_at: 1.week.ago...) }
   scope :by_likes, -> { where(likes_count: desc) }
 
-  belongs_to :owner, class_name: "User"
-
 end
